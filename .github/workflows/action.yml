@@ -27,7 +27,7 @@ jobs:
 
       - name: 'Auto_renew'
         env:
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-          TOKEN: ${{ secrets.TOKEN }}
+          USERNAME: ${{ MY_SECRET.USERNAME }}
+          PASSWORD: ${{ MY_SECRET.PASSWORD }}
+          TOKEN: ${{ MY_SECRET.TOKEN }}
         run: python main.py
